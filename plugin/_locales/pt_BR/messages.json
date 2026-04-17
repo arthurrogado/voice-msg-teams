@@ -1,0 +1,137 @@
+{
+  "extensionName": {
+    "message": "Mensagem de Voz para Teams Web"
+  },
+  "extensionShortName": {
+    "message": "Voz no Teams"
+  },
+  "extensionDescription": {
+    "message": "Adiciona um botão de gravação ao Teams Web para capturar áudio localmente e anexá-lo como arquivo WAV."
+  },
+  "actionTitle": {
+    "message": "Mensagem de Voz para Teams Web"
+  },
+  "recordButtonLabel": {
+    "message": "Gravar mensagem de voz"
+  },
+  "stopButtonLabel": {
+    "message": "Parar gravação e anexar áudio"
+  },
+  "browserUnsupportedMicrophoneCapture": {
+    "message": "Este navegador não oferece suporte à captura de microfone nesta página."
+  },
+  "microphonePermissionDenied": {
+    "message": "Permissão de microfone negada."
+  },
+  "microphoneNotFound": {
+    "message": "Nenhum microfone disponível foi encontrado."
+  },
+  "microphoneGenericName": {
+    "message": "Microfone"
+  },
+  "startRecordingFailed": {
+    "message": "Não foi possível iniciar a gravação local."
+  },
+  "recordingStoppedLimit": {
+    "message": "Gravação encerrada após 5 minutos."
+  },
+  "recordingInProgressPrefix": {
+    "message": "Gravando"
+  },
+  "convertingToWav": {
+    "message": "Convertendo para WAV..."
+  },
+  "noActiveRecording": {
+    "message": "Nenhuma gravação ativa foi encontrada."
+  },
+  "emptyRecording": {
+    "message": "A gravação terminou vazia."
+  },
+  "attachingAudio": {
+    "message": "Anexando áudio..."
+  },
+  "stopRecordingFailed": {
+    "message": "Falha ao finalizar a gravação."
+  },
+  "browserReportedRecordingError": {
+    "message": "O navegador reportou um erro durante a gravação."
+  },
+  "voiceMessageFilePrefix": {
+    "message": "mensagem_de_voz"
+  },
+  "convertToWavFailed": {
+    "message": "Não foi possível converter o áudio para WAV."
+  },
+  "composerNotFound": {
+    "message": "Não encontrei o composer ativo do Teams."
+  },
+  "teamsDidNotConfirmAttachment": {
+    "message": "O Teams não confirmou o anexo do áudio."
+  },
+  "teamsCouldNotOpenFilePicker": {
+    "message": "Não foi possível abrir o seletor de arquivos do Teams."
+  },
+  "teamsFilePickerRejectedAudio": {
+    "message": "O seletor de arquivos do Teams recusou o áudio."
+  },
+  "teamsDidNotConfirmWavUpload": {
+    "message": "O Teams não confirmou o upload do WAV no composer."
+  },
+  "sendOrRemovePendingAttachment": {
+    "message": "Envie ou remova o anexo atual antes de gravar outro áudio."
+  },
+  "popupTitle": {
+    "message": "Microfone"
+  },
+  "popupDescription": {
+    "message": "Na maioria dos casos, use o microfone padrão do sistema; expanda a seção só quando quiser escolher uma entrada específica."
+  },
+  "popupMicrophoneSection": {
+    "message": "Seleção de microfone"
+  },
+  "popupSelectLabel": {
+    "message": "Dispositivo de entrada"
+  },
+  "popupNoiseSuppressionLabel": {
+    "message": "Supressão de ruído"
+  },
+  "popupNoiseSuppressionDescription": {
+    "message": "Usa o processamento nativo de áudio do navegador durante a gravação."
+  },
+  "popupSystemDefaultOption": {
+    "message": "Padrão do sistema"
+  },
+  "popupRefreshButton": {
+    "message": "Atualizar lista"
+  },
+  "popupStatusLoading": {
+    "message": "Carregando microfones da aba ativa do Teams..."
+  },
+  "popupStatusSaved": {
+    "message": "Preferência de microfone salva."
+  },
+  "popupStatusNoiseSuppressionSaved": {
+    "message": "Preferência de supressão de ruído salva."
+  },
+  "popupStatusReady": {
+    "message": "Lista de microfones atualizada."
+  },
+  "popupStatusOpenTeams": {
+    "message": "Abra o Teams Web em uma aba ativa para carregar a lista de microfones."
+  },
+  "popupStatusLabelsHidden": {
+    "message": "Alguns nomes podem aparecer genéricos até o Teams ter permissão de microfone."
+  },
+  "popupStatusSelectedMissing": {
+    "message": "O microfone salvo não está mais disponível. Voltando para o padrão do sistema."
+  },
+  "popupStatusLoadFailed": {
+    "message": "Não foi possível carregar os microfones pelo Teams Web."
+  },
+  "popupFooter": {
+    "message": "Nenhum algoritmo próprio de DSP é usado aqui; essa chave apenas liga ou desliga a supressão nativa do navegador."
+  },
+  "unexpectedVoiceMessageError": {
+    "message": "Falha inesperada ao processar a mensagem de voz."
+  }
+}

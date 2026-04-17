@@ -1,0 +1,114 @@
+:root {
+  --tvm-idle-fg: rgba(255, 255, 255, 0.84);
+  --tvm-hover-bg: rgba(255, 255, 255, 0.08);
+  --tvm-recording-bg: #d44c4c;
+  --tvm-recording-shadow: rgba(212, 76, 76, 0.26);
+  --tvm-busy-bg: rgba(35, 161, 198, 0.18);
+  --tvm-busy-fg: #8fe2f8;
+  --tvm-bubble-bg: rgba(10, 24, 33, 0.96);
+  --tvm-bubble-info: rgba(13, 136, 164, 0.96);
+  --tvm-bubble-success: rgba(30, 156, 109, 0.96);
+  --tvm-bubble-error: rgba(201, 73, 73, 0.98);
+  --tvm-bubble-warning: rgba(214, 138, 43, 0.98);
+}
+
+#teams-voice-message-root {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  margin-right: 4px;
+}
+
+#teams-voice-message-root .tvm-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--tvm-idle-fg);
+  cursor: pointer;
+  transition: background-color 140ms ease, color 140ms ease, box-shadow 140ms ease, transform 140ms ease;
+}
+
+#teams-voice-message-root .tvm-button::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-color: currentColor;
+  -webkit-mask: var(--tvm-icon-url) center / contain no-repeat;
+  mask: var(--tvm-icon-url) center / contain no-repeat;
+}
+
+#teams-voice-message-root .tvm-button:hover:not(:disabled) {
+  background: var(--tvm-hover-bg);
+}
+
+#teams-voice-message-root .tvm-button:disabled {
+  cursor: wait;
+}
+
+#teams-voice-message-root[data-state='recording'] .tvm-button {
+  background: var(--tvm-recording-bg);
+  color: #ffffff;
+  box-shadow: 0 0 0 3px var(--tvm-recording-shadow);
+}
+
+#teams-voice-message-root[data-state='recording'] .tvm-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+#teams-voice-message-root[data-state='busy'] .tvm-button {
+  background: var(--tvm-busy-bg);
+  color: var(--tvm-busy-fg);
+}
+
+#teams-voice-message-bubble {
+  position: fixed;
+  min-width: 160px;
+  max-width: 260px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  color: #ffffff;
+  background: var(--tvm-bubble-bg);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.26);
+  line-height: 1.35;
+  font-size: 12px;
+  pointer-events: none;
+  white-space: normal;
+  z-index: 2147483647;
+}
+
+#teams-voice-message-bubble[data-tone='info'],
+#teams-voice-message-bubble[data-tone='busy'] {
+  background: var(--tvm-bubble-info);
+}
+
+#teams-voice-message-bubble[data-tone='success'] {
+  background: var(--tvm-bubble-success);
+}
+
+#teams-voice-message-bubble[data-tone='error'] {
+  background: var(--tvm-bubble-error);
+}
+
+#teams-voice-message-bubble[data-tone='warning'] {
+  background: var(--tvm-bubble-warning);
+}
+
+#teams-voice-message-bubble[data-tone='recording'] {
+  background: var(--tvm-recording-bg);
+}
+
+@media (max-width: 900px) {
+  #teams-voice-message-bubble {
+    min-width: 140px;
+    max-width: 220px;
+  }
+}

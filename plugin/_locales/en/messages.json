@@ -1,0 +1,137 @@
+{
+  "extensionName": {
+    "message": "Voice Message for Teams Web"
+  },
+  "extensionShortName": {
+    "message": "Teams Voice"
+  },
+  "extensionDescription": {
+    "message": "Adds a recording button to Teams Web to capture audio locally and attach it as a WAV file."
+  },
+  "actionTitle": {
+    "message": "Voice Message for Teams Web"
+  },
+  "recordButtonLabel": {
+    "message": "Record voice message"
+  },
+  "stopButtonLabel": {
+    "message": "Stop recording and attach audio"
+  },
+  "browserUnsupportedMicrophoneCapture": {
+    "message": "This browser does not support microphone capture on this page."
+  },
+  "microphonePermissionDenied": {
+    "message": "Microphone permission was denied."
+  },
+  "microphoneNotFound": {
+    "message": "No available microphone was found."
+  },
+  "microphoneGenericName": {
+    "message": "Microphone"
+  },
+  "startRecordingFailed": {
+    "message": "Could not start local recording."
+  },
+  "recordingStoppedLimit": {
+    "message": "Recording stopped after 5 minutes."
+  },
+  "recordingInProgressPrefix": {
+    "message": "Recording"
+  },
+  "convertingToWav": {
+    "message": "Converting to WAV..."
+  },
+  "noActiveRecording": {
+    "message": "No active recording was found."
+  },
+  "emptyRecording": {
+    "message": "The recording ended empty."
+  },
+  "attachingAudio": {
+    "message": "Attaching audio..."
+  },
+  "stopRecordingFailed": {
+    "message": "Failed to finalize the recording."
+  },
+  "browserReportedRecordingError": {
+    "message": "The browser reported an error during recording."
+  },
+  "voiceMessageFilePrefix": {
+    "message": "voice_message"
+  },
+  "convertToWavFailed": {
+    "message": "Could not convert the audio to WAV."
+  },
+  "composerNotFound": {
+    "message": "Could not find the active Teams composer."
+  },
+  "teamsDidNotConfirmAttachment": {
+    "message": "Teams did not confirm the audio attachment."
+  },
+  "teamsCouldNotOpenFilePicker": {
+    "message": "Could not open the Teams file picker."
+  },
+  "teamsFilePickerRejectedAudio": {
+    "message": "The Teams file picker rejected the audio file."
+  },
+  "teamsDidNotConfirmWavUpload": {
+    "message": "Teams did not confirm the WAV upload in the composer."
+  },
+  "sendOrRemovePendingAttachment": {
+    "message": "Send or remove the current attachment before recording another audio message."
+  },
+  "popupTitle": {
+    "message": "Microphone"
+  },
+  "popupDescription": {
+    "message": "Keep the system default for most cases, or expand the microphone section when you need a specific input."
+  },
+  "popupMicrophoneSection": {
+    "message": "Microphone selection"
+  },
+  "popupSelectLabel": {
+    "message": "Input device"
+  },
+  "popupNoiseSuppressionLabel": {
+    "message": "Noise suppression"
+  },
+  "popupNoiseSuppressionDescription": {
+    "message": "Uses the browser's native audio processing during recording."
+  },
+  "popupSystemDefaultOption": {
+    "message": "System default"
+  },
+  "popupRefreshButton": {
+    "message": "Refresh list"
+  },
+  "popupStatusLoading": {
+    "message": "Loading microphones from the active Teams tab..."
+  },
+  "popupStatusSaved": {
+    "message": "Microphone preference saved."
+  },
+  "popupStatusNoiseSuppressionSaved": {
+    "message": "Noise suppression preference saved."
+  },
+  "popupStatusReady": {
+    "message": "Microphone list updated."
+  },
+  "popupStatusOpenTeams": {
+    "message": "Open Teams Web in an active tab to load the microphone list."
+  },
+  "popupStatusLabelsHidden": {
+    "message": "Some microphone names may stay generic until Teams has microphone permission."
+  },
+  "popupStatusSelectedMissing": {
+    "message": "The saved microphone is no longer available. Reverting to system default."
+  },
+  "popupStatusLoadFailed": {
+    "message": "Could not load microphones from Teams Web."
+  },
+  "popupFooter": {
+    "message": "A custom DSP algorithm is not used here; this toggle only enables or disables the browser's built-in suppression."
+  },
+  "unexpectedVoiceMessageError": {
+    "message": "Unexpected failure while processing the voice message."
+  }
+}

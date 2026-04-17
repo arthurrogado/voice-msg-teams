@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Voice Message for Teams Web</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="popup">
+      <h1 data-i18n="popupTitle"></h1>
+      <p class="popup-description" data-i18n="popupDescription"></p>
+
+      <details class="popup-section">
+        <summary class="popup-section-summary" data-i18n="popupMicrophoneSection"></summary>
+
+        <div class="popup-section-body">
+          <label class="popup-label" for="microphone-select" data-i18n="popupSelectLabel"></label>
+          <select id="microphone-select"></select>
+
+          <button id="refresh-button" type="button" data-i18n="popupRefreshButton"></button>
+        </div>
+      </details>
+
+      <label class="popup-toggle" for="noise-suppression-toggle">
+        <span class="popup-toggle-copy">
+          <span class="popup-toggle-title" data-i18n="popupNoiseSuppressionLabel"></span>
+          <span class="popup-toggle-description" data-i18n="popupNoiseSuppressionDescription"></span>
+        </span>
+        <span class="popup-toggle-control">
+          <input id="noise-suppression-toggle" type="checkbox" aria-label="Noise suppression" title="Noise suppression" data-i18n-aria-label="popupNoiseSuppressionLabel">
+          <span class="popup-toggle-track" aria-hidden="true"></span>
+        </span>
+      </label>
+
+      <p id="status" class="popup-status" aria-live="polite"></p>
+      <p class="popup-footer" data-i18n="popupFooter"></p>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
